@@ -11,8 +11,12 @@ public partial class TestPage : System.Web.UI.Page
 	private SqlConnection con = new SqlConnection("Server=tcp:t4bsdev.database.windows.net,1433;Initial Catalog=MBPDB;Persist Security Info=False;User ID=" + did + ";Password=" + dpw + ";MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 	public string str = "";
 	
-    public TestPage()
+   public TestPage()
     {
+		
+	}
+	
+	public void Button1_Click(object sender, EventArgs e){
 		Label1.Text = "The selected date is " + Calendar1.SelectedDate.ToShortDateString();
 	}
 }
