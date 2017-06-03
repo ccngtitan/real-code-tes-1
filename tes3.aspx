@@ -6,6 +6,7 @@
 <body>
 <form runat=server>
 	<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+	<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 </form>
 </body>
 </html>
