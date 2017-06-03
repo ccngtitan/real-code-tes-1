@@ -13,6 +13,6 @@ public partial class TestPage : System.Web.UI.Page
 	
     public TestPage()
     {
-		
+		Label1.Text = "The selected date is " + Calendar1.SelectedDate.ToShortDateString();
 	}
 }
